@@ -6,7 +6,7 @@ Per prima cosa, dobbiamo creare la situazione "di partenza".
 Crea il modulo: Nella tua cartella degli addons, crea test_migration.
 
 Manifest (__manifest__.py):
-
+```bash
 Python
 {
     'name': 'Test Migration',
@@ -15,8 +15,10 @@ Python
     'data': [],
     'installable': True,
 }
-Modello (models/test_model.py):
+```
 
+Modello (models/test_model.py):
+```bash
 Python
 from odoo import models, fields
 
@@ -25,6 +27,7 @@ class VecchiaTabella(models.Model):
     _description = 'Tabella Originale'
 
     name = fields.Char(string="Nome")
+```
 Avvia e Installa:
 
 Avvia il container: docker-compose up -d
@@ -47,6 +50,7 @@ Nota: Il nome della cartella deve corrispondere esattamente alla nuova versione 
 Scrivi lo script di migrazione: Incolla questo nel file pre-migrate.py:
 
 Python
+```
 # -*- coding: utf-8 -*-
 import logging
 
@@ -65,20 +69,24 @@ def migrate(cr, version):
     # Questo evita che Odoo pensi che il vecchio modello sia sparito
     cr.execute("UPDATE ir_model SET model = %s WHERE model = %s", (new_table.replace('_', '.'), old_table.replace('_', '.')))
     cr.execute("UPDATE ir_model_data SET model = %s WHERE model = %s", (new_table.replace('_', '.'), old_table.replace('_', '.')))
-
+```
 Fase 3: Esecuzione su Docker
 Per far sì che Odoo veda i nuovi file e avvii la migrazione, segui questi comandi dal terminale:
 
 Riavvia il container (per fargli leggere i nuovi file Python):
 
 Bash:
+```
 docker-compose restart odoo
-
+```
 Lancia l'aggiornamento via riga di comando (è il modo più pulito per vedere i log):
 
 Bash:
+```
 docker exec -u 0 -it nome_del_tuo_container_odoo odoo -u test_migration -d nome_del_tuo_db --stop-after-init
--u: aggiorna il modulo.
+-u
+```
+: aggiorna il modulo.
 
 -d: specifica il database.
 
@@ -93,5 +101,5 @@ Cerca test.nuova_tabella.
 
 Il momento della verità: Controlla i record. Se tutto è andato bene, troverai i dati che avevi inserito nella "Vecchia Tabella" ora presenti nella "Nuova Tabella".
 
-##PS:  ho creato la view per la creazione di dati e verifica in modo piu semplice 
+## PS:  ho creato la view per la creazione di dati e verifica in modo piu semplice 
 

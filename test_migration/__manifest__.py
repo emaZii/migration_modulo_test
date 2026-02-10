@@ -4,7 +4,7 @@
     'depends': ['base'],
     'data':[
         'security/ir.model.access.csv',
-        'views/view_vecchia_tabella.xml',
+        'views/view_nuova_tabella.xml',
     ],
     'installable': True
 }

@@ -1,0 +1,161 @@
+Running as user 'root' is a security risk.
+2026-02-10 14:35:11,140 1938 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO"
+2026-02-10 14:35:11,141 1938 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO"
+2026-02-10 14:35:11,141 1938 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2026-02-10 14:35:11,141 1938 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG"
+2026-02-10 14:35:11,141 1938 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO"
+2026-02-10 14:35:11,141 1938 DEBUG ? odoo.netsvc: logger level set: ":INFO"
+2026-02-10 14:35:11,141 1938 INFO ? odoo: Odoo version 17.0-20251208
+2026-02-10 14:35:11,141 1938 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf
+2026-02-10 14:35:11,142 1938 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/design-themes', '/mnt/enterprise', '/mnt/extra-addons']
+2026-02-10 14:35:11,144 1938 INFO ? odoo: database: odoo@db:5432
+2026-02-10 14:35:11,232 1938 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2026-02-10 14:35:11,383 1938 DEBUG ? odoo.service.server: Setting signal handlers
+2026-02-10 14:35:11,398 1938 DEBUG lab17 odoo.modules.registry: Multiprocess load registry signaling: [Registry: 2] [Cache default: 4] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1]
+2026-02-10 14:35:11,404 1938 INFO lab17 odoo.modules.loading: loading 1 modules...
+2026-02-10 14:35:11,404 1938 DEBUG lab17 odoo.modules.loading: Loading module base (1/1)
+2026-02-10 14:35:11,409 1938 DEBUG lab17 odoo.modules.loading: Module base loaded in 0.01s, 0 queries
+2026-02-10 14:35:11,410 1938 INFO lab17 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra)
+2026-02-10 14:35:11,428 1938 INFO lab17 odoo.modules.loading: updating modules list
+2026-02-10 14:35:11,430 1938 INFO lab17 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a
+2026-02-10 14:35:13,060 1938 WARNING lab17 odoo.modules.module: Missing `license` key in manifest for 'migration_test_2', defaulting to LGPL-3
+2026-02-10 14:35:13,615 1938 WARNING lab17 odoo.modules.module: Missing `license` key in manifest for 'test_migration', defaulting to LGPL-3
+2026-02-10 14:35:13,893 1938 INFO lab17 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['tabella_vecchia'] to user __system__ #1 via n/a
+2026-02-10 14:35:13,893 1938 INFO lab17 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['tabella_vecchia'] to user __system__ #1 via n/a
+2026-02-10 14:35:15,830 1938 INFO lab17 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a
+2026-02-10 14:35:15,857 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'Install'"
+2026-02-10 14:35:15,858 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'Apply Schedule Upgrade'"
+2026-02-10 14:35:15,873 1938 DEBUG lab17 odoo.modules.loading: Updating graph with 17 more modules
+2026-02-10 14:35:15,874 1938 INFO lab17 odoo.modules.loading: loading 18 modules...
+2026-02-10 14:35:15,874 1938 INFO lab17 odoo.modules.loading: Loading module test_migration (2/18)
+2026-02-10 14:35:15,894 1938 INFO lab17 odoo.modules.migration: module test_migration: Running migration [>17.0.1.0.1] pre-migrate
+2026-02-10 14:35:15,895 1938 INFO lab17 pre-migrate: Rinomino tabella da test_vecchia_tabella a test_nuova_tabella
+2026-02-10 14:35:15,916 1938 INFO lab17 odoo.modules.registry: module test_migration: creating or updating database tables
+2026-02-10 14:35:15,980 1938 INFO lab17 odoo.modules.loading: loading test_migration/security/ir.model.access.csv
+2026-02-10 14:35:16,254 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'See all possible values'"
+2026-02-10 14:35:16,254 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'external id'"
+2026-02-10 14:35:16,254 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for ""Unknown value '%s' for boolean field '%%(field)s'""
+2026-02-10 14:35:16,254 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for ""Use '1' for yes and '0' for no""
+2026-02-10 14:35:16,255 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'See all possible values'"
+2026-02-10 14:35:16,256 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for "'external id'"
+2026-02-10 14:35:16,256 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for ""Unknown value '%s' for boolean field '%%(field)s'""
+2026-02-10 14:35:16,257 1938 DEBUG lab17 odoo.tools.translate: no translation language detected, skipping translation for ""Use '1' for yes and '0' for no""
+2026-02-10 14:35:16,260 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from call_cache_clearing_methods /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2103
+2026-02-10 14:35:16,265 1938 INFO lab17 odoo.modules.loading: loading test_migration/views/view_nuova_tabella.xml
+2026-02-10 14:35:16,269 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from create /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:517
+2026-02-10 14:35:16,277 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from create /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:517
+2026-02-10 14:35:16,281 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from create /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:314
+2026-02-10 14:35:16,284 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from create /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:80
+2026-02-10 14:35:16,287 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_menu.py:173
+2026-02-10 14:35:16,291 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_menu.py:173
+2026-02-10 14:35:16,300 1938 INFO lab17 odoo.addons.base.models.ir_module: module test_migration: no translation for language it_IT
+2026-02-10 14:35:16,311 1938 INFO lab17 odoo.modules.loading: Module test_migration loaded in 0.44s, 85 queries (+85 other)
+2026-02-10 14:35:16,311 1938 DEBUG lab17 odoo.modules.loading: Loading module web (3/18)
+2026-02-10 14:35:16,313 1938 DEBUG lab17 odoo.modules.loading: Module web loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,313 1938 DEBUG lab17 odoo.modules.loading: Loading module auth_totp (4/18)
+2026-02-10 14:35:16,321 1938 DEBUG lab17 odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries
+2026-02-10 14:35:16,321 1938 DEBUG lab17 odoo.modules.loading: Loading module base_import (5/18)
+2026-02-10 14:35:16,335 1938 DEBUG lab17 odoo.modules.loading: Module base_import loaded in 0.01s, 0 queries
+2026-02-10 14:35:16,335 1938 DEBUG lab17 odoo.modules.loading: Loading module base_import_module (6/18)
+2026-02-10 14:35:16,338 1938 DEBUG lab17 odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,338 1938 DEBUG lab17 odoo.modules.loading: Loading module base_setup (7/18)
+2026-02-10 14:35:16,340 1938 DEBUG lab17 odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,340 1938 DEBUG lab17 odoo.modules.loading: Loading module bus (8/18)
+2026-02-10 14:35:16,348 1938 DEBUG lab17 odoo.modules.loading: Module bus loaded in 0.01s, 0 queries
+2026-02-10 14:35:16,348 1938 DEBUG lab17 odoo.modules.loading: Loading module web_cohort (9/18)
+2026-02-10 14:35:16,353 1938 DEBUG lab17 odoo.modules.loading: Module web_cohort loaded in 0.01s, 0 queries
+2026-02-10 14:35:16,354 1938 DEBUG lab17 odoo.modules.loading: Loading module web_gantt (10/18)
+2026-02-10 14:35:16,356 1938 DEBUG lab17 odoo.modules.loading: Module web_gantt loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,356 1938 DEBUG lab17 odoo.modules.loading: Loading module web_grid (11/18)
+2026-02-10 14:35:16,359 1938 DEBUG lab17 odoo.modules.loading: Module web_grid loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,359 1938 DEBUG lab17 odoo.modules.loading: Loading module web_tour (12/18)
+2026-02-10 14:35:16,360 1938 DEBUG lab17 odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,360 1938 DEBUG lab17 odoo.modules.loading: Loading module iap (13/18)
+2026-02-10 14:35:16,363 1938 DEBUG lab17 odoo.modules.loading: Module iap loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,363 1938 DEBUG lab17 odoo.modules.loading: Loading module web_editor (14/18)
+2026-02-10 14:35:16,436 1938 DEBUG lab17 odoo.modules.loading: Module web_editor loaded in 0.07s, 0 queries
+2026-02-10 14:35:16,436 1938 DEBUG lab17 odoo.modules.loading: Loading module web_enterprise (15/18)
+2026-02-10 14:35:16,438 1938 DEBUG lab17 odoo.modules.loading: Module web_enterprise loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,438 1938 DEBUG lab17 odoo.modules.loading: Loading module web_map (16/18)
+2026-02-10 14:35:16,441 1938 DEBUG lab17 odoo.modules.loading: Module web_map loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,441 1938 DEBUG lab17 odoo.modules.loading: Loading module web_mobile (17/18)
+2026-02-10 14:35:16,442 1938 DEBUG lab17 odoo.modules.loading: Module web_mobile loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,442 1938 DEBUG lab17 odoo.modules.loading: Loading module web_unsplash (18/18)
+2026-02-10 14:35:16,444 1938 DEBUG lab17 odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries
+2026-02-10 14:35:16,444 1938 INFO lab17 odoo.modules.loading: 18 modules loaded in 0.57s, 85 queries (+85 extra)
+2026-02-10 14:35:16,498 1938 DEBUG lab17 odoo.models: column index is in the table auth_totp_device but not in the corresponding object auth_totp.device
+2026-02-10 14:35:16,498 1938 DEBUG lab17 odoo.models: column key is in the table auth_totp_device but not in the corresponding object auth_totp.device
+2026-02-10 14:35:16,538 1938 DEBUG lab17 odoo.models: column web is in the table ir_module_module but not in the corresponding object ir.module.module
+2026-02-10 14:35:16,561 1938 DEBUG lab17 odoo.models: column password is in the table res_users but not in the corresponding object res.users
+2026-02-10 14:35:16,561 1938 DEBUG lab17 odoo.models: column totp_secret is in the table res_users but not in the corresponding object res.users
+2026-02-10 14:35:16,561 1938 DEBUG lab17 odoo.models: column index is in the table res_users_apikeys but not in the corresponding object res.users.apikeys
+2026-02-10 14:35:16,561 1938 DEBUG lab17 odoo.models: column key is in the table res_users_apikeys but not in the corresponding object res.users.apikeys
+2026-02-10 14:35:16,566 1938 INFO lab17 odoo.modules.loading: Model test.vecchia_tabella is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2026-02-10 14:35:16,573 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 87@ir.actions.act_window (test_migration.action_test_vecchia_tabella)
+2026-02-10 14:35:16,574 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:321
+2026-02-10 14:35:16,589 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,594 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8861]
+2026-02-10 14:35:16,594 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [87]
+2026-02-10 14:35:16,594 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:98
+2026-02-10 14:35:16,595 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 246@ir.ui.view (test_migration.view_test_vecchia_tabella_form)
+2026-02-10 14:35:16,598 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:558
+2026-02-10 14:35:16,607 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,611 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8860]
+2026-02-10 14:35:16,611 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [246]
+2026-02-10 14:35:16,612 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 245@ir.ui.view (test_migration.view_test_vecchia_tabella_tree)
+2026-02-10 14:35:16,615 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:558
+2026-02-10 14:35:16,624 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,630 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8859]
+2026-02-10 14:35:16,631 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [245]
+2026-02-10 14:35:16,632 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 160@ir.model.access (test_migration.access_test_vecchia_tabella)
+2026-02-10 14:35:16,633 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from call_cache_clearing_methods /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2103
+2026-02-10 14:35:16,642 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,647 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8858]
+2026-02-10 14:35:16,647 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [160]
+2026-02-10 14:35:16,649 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1558@ir.model.fields (test_migration.field_test_vecchia_tabella__write_date)
+2026-02-10 14:35:16,663 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,670 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8857]
+2026-02-10 14:35:16,670 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1558]
+2026-02-10 14:35:16,672 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1557@ir.model.fields (test_migration.field_test_vecchia_tabella__write_uid)
+2026-02-10 14:35:16,681 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,687 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8856]
+2026-02-10 14:35:16,687 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1557]
+2026-02-10 14:35:16,688 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1556@ir.model.fields (test_migration.field_test_vecchia_tabella__create_date)
+2026-02-10 14:35:16,697 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,704 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8855]
+2026-02-10 14:35:16,704 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1556]
+2026-02-10 14:35:16,705 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1555@ir.model.fields (test_migration.field_test_vecchia_tabella__create_uid)
+2026-02-10 14:35:16,714 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,720 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8854]
+2026-02-10 14:35:16,721 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1555]
+2026-02-10 14:35:16,721 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1554@ir.model.fields (test_migration.field_test_vecchia_tabella__display_name)
+2026-02-10 14:35:16,730 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,736 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8853]
+2026-02-10 14:35:16,736 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1554]
+2026-02-10 14:35:16,737 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1553@ir.model.fields (test_migration.field_test_vecchia_tabella__id)
+2026-02-10 14:35:16,746 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,750 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8852]
+2026-02-10 14:35:16,750 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1553]
+2026-02-10 14:35:16,753 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 1552@ir.model.fields (test_migration.field_test_vecchia_tabella__name)
+2026-02-10 14:35:16,763 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,770 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8851]
+2026-02-10 14:35:16,770 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1552]
+2026-02-10 14:35:16,772 1938 INFO lab17 odoo.addons.base.models.ir_model: Deleting 138@ir.model (test_migration.model_test_vecchia_tabella)
+2026-02-10 14:35:16,776 1938 INFO lab17 odoo.addons.base.models.ir_model: The model test.vecchia_tabella could not be dropped because it did not exist in the registry.
+2026-02-10 14:35:16,784 1938 DEBUG lab17 odoo.modules.registry: Invalidating default model caches from unlink /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2246
+2026-02-10 14:35:16,790 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [8850]
+2026-02-10 14:35:16,790 1938 INFO lab17 odoo.models.unlink: User #1 deleted ir.model records with IDs: [138]
+2026-02-10 14:35:16,797 1938 DEBUG lab17 odoo.addons.base.models.ir_cron: will execute 'Base: Auto-vacuum internal data' at 2026-02-10 14:36:16.791484
+2026-02-10 14:35:16,798 1938 INFO lab17 odoo.modules.registry: verifying fields for every extended model
+2026-02-10 14:35:16,828 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533
+2026-02-10 14:35:16,830 1938 DEBUG lab17 odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533
+2026-02-10 14:35:17,052 1938 INFO lab17 odoo.modules.loading: Modules loaded.
+2026-02-10 14:35:17,056 1938 INFO lab17 odoo.modules.registry: Registry loaded in 5.673s
+2026-02-10 14:35:17,057 1938 INFO lab17 odoo.service.server: Initiating shutdown
+2026-02-10 14:35:17,057 1938 INFO lab17 odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2026-02-10 14:35:17,057 1938 DEBUG lab17 odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x78d311763790>>
+2026-02-10 14:35:17,057 1938 DEBUG lab17 odoo.service.server: on_close call <function _kick_all at 0x78d3117c0dc0>
+2026-02-10 14:35:17,057 1938 DEBUG lab17 odoo.service.server: current thread: <_MainThread(MainThread, started 132848080543744)>
+2026-02-10 14:35:17,057 1938 DEBUG lab17 odoo.service.server: process <_MainThread(MainThread, started 132848080543744)> (False)
+2026-02-10 14:35:17,057 1938 INFO lab17 odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 1 connections
+2026-02-10 14:35:17,058 1938 DEBUG lab17 odoo.service.server: --

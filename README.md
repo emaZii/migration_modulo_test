@@ -34,12 +34,12 @@ Crea i Dati: Vai in Impostazioni > Tecnico > Modelli, cerca test.vecchia_tabella
 Fase 2: Preparazione alla migrazione (Versione 1.1.0)
 Ora simuliamo il cambiamento del codice. Non aggiornare ancora il modulo su Docker!
 
-Modifica il Manifest: Cambia la versione in '17.0.1.1.0'.
+Modifica il Manifest: Cambia la versione in '17.0.1.0.1'.
 
 Rinomina il Modello: Nel file Python, cambia _name in 'test.nuova_tabella'.
 
 Crea la cartella di migrazione:
-La struttura deve essere: test_migration/migrations/17.0.1.1.0/pre-migrate.py.
+La struttura deve essere: test_migration/migrations/17.0.1.0.1/pre-migrate.py.
 Nota: Il nome della cartella deve corrispondere esattamente alla nuova versione nel manifest.
 
 Scrivi lo script di migrazione: Incolla questo nel file pre-migrate.py:

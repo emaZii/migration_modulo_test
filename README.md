@@ -1,4 +1,6 @@
-Fase 1: Setup dell'ambiente (Versione 1.0.1)
+### Step By Step
+
+## Fase 1: Setup dell'ambiente (Versione 1.0.1)
 Per prima cosa, dobbiamo creare la situazione "di partenza".
 
 Crea il modulo: Nella tua cartella degli addons, crea test_migration.
@@ -31,7 +33,7 @@ Installa il modulo: vai nell'interfaccia di Odoo e installa test_migration.
 
 Crea i Dati: Vai in Impostazioni > Tecnico > Modelli, cerca test.vecchia_tabella e crea 2 o 3 record (es. "Dato Test 1", "Dato Test 2").
 
-Fase 2: Preparazione alla migrazione (Versione 1.1.0)
+## Fase 2: Preparazione alla migrazione (Versione 1.1.0)
 Ora simuliamo il cambiamento del codice. Non aggiornare ancora il modulo su Docker!
 
 Modifica il Manifest: Cambia la versione in '17.0.1.0.1'.
@@ -69,11 +71,12 @@ Per far sì che Odoo veda i nuovi file e avvii la migrazione, segui questi coman
 
 Riavvia il container (per fargli leggere i nuovi file Python):
 
-Bash
+Bash:
 docker-compose restart odoo
+
 Lancia l'aggiornamento via riga di comando (è il modo più pulito per vedere i log):
 
-Bash
+Bash:
 docker exec -u 0 -it nome_del_tuo_container_odoo odoo -u test_migration -d nome_del_tuo_db --stop-after-init
 -u: aggiorna il modulo.
 
@@ -90,11 +93,5 @@ Cerca test.nuova_tabella.
 
 Il momento della verità: Controlla i record. Se tutto è andato bene, troverai i dati che avevi inserito nella "Vecchia Tabella" ora presenti nella "Nuova Tabella".
 
-Perché questo è importante?
-Se non avessi usato lo script, Odoo avrebbe:
+##PS:  ho creato la view per la creazione di dati e verifica in modo piu semplice 
 
-Visto che test.vecchia_tabella non esiste più nel codice e l'avrebbe lasciata lì (o segnata come da eliminare).
-
-Creato una nuova tabella vuota test_nuova_tabella.
-
-Risultato: Dati persi (o meglio, rimasti bloccati in una tabella orfana).
